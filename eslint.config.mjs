@@ -24,6 +24,6 @@ export default tseslint.config(
     },
   },
   {
-    ignores: ['node_modules/', 'dist/', '.astro/', '*.config.mjs'],
+    ignores: ['node_modules/', 'dist/', '.astro/', '*.config.mjs', '*.config.ts'],
   }
 );
