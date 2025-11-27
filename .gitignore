@@ -1,1 +1,24 @@
 node_modules/
+dist/
+.astro/
+
+# Vercel
+.vercel/
+
+# Beads daemon files (keep issues.jsonl and config.json)
+.beads/bd.sock
+.beads/beads.db
+.beads/beads.db-shm
+.beads/beads.db-wal
+.beads/daemon.lock
+.beads/daemon.log
+.beads/daemon.pid
+
+# Local user config
+CLAUDE.local.md
+
+# Coverage
+coverage/
+
+# Windows artifacts
+nul
