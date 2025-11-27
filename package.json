@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,22 @@
   },
   "homepage": "https://github.com/blingblang/legendary-octo-palm-tree#readme",
   "devDependencies": {
-    "markdownlint-cli": "^0.45.0"
+    "@playwright/test": "^1.57.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.5",
+    "markdownlint-cli": "^0.45.0",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "@sentry/astro": "^10.25.0"
+  },
+  "lint-staged": {
+    "*.md": [
+      "prettier --write",
+      "markdownlint"
+    ],
+    "*.{js,ts,json}": [
+      "prettier --write"
+    ]
   }
 }
