@@ -26,6 +26,13 @@ variable "sentry_dsn" {
   sensitive   = true
 }
 
+variable "sentry_auth_token" {
+  description = "Sentry auth token for releases and source maps"
+  type        = string
+  default     = ""
+  sensitive   = true
+}
+
 variable "axiom_api_token" {
   description = "Axiom API token for logging"
   type        = string
@@ -37,4 +44,16 @@ variable "matomo_site_id" {
   description = "Matomo site ID for analytics"
   type        = string
   default     = ""
+}
+
+variable "matomo_url" {
+  description = "Matomo instance URL (e.g., https://analytics.example.com)"
+  type        = string
+  default     = ""
+}
+
+variable "axiom_dataset" {
+  description = "Axiom dataset name for logging"
+  type        = string
+  default     = "legendary-octo-palm-tree"
 }
