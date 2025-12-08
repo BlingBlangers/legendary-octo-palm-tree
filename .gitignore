@@ -35,3 +35,9 @@ override.tf.json
 *_override.tf.json
 .terraformrc
 terraform.rc
+tfplan
+*.tfplan
+
+# Playwright
+playwright-report/
+test-results/
