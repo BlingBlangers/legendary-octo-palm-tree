@@ -10,7 +10,7 @@ variable "vercel_team_id" {
 variable "github_repo" {
   description = "GitHub repository in format owner/repo"
   type        = string
-  default     = "JimmyJames890/legendary-octo-palm-tree"
+  default     = "BlingBlangers/legendary-octo-palm-tree"
 }
 
 variable "domain" {
