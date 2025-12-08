@@ -10,8 +10,12 @@ output "vercel_project_name" {
   value       = local.current_env.vercel_project_name
 }
 
-# Uncomment when Vercel project resource is added
-# output "vercel_project_url" {
-#   description = "Vercel project URL"
-#   value       = vercel_project.main.url
-# }
+output "vercel_project_id" {
+  description = "Vercel project ID"
+  value       = vercel_project.main.id
+}
+
+output "vercel_project_url" {
+  description = "Vercel project URL"
+  value       = "https://${vercel_project.main.name}.vercel.app"
+}
